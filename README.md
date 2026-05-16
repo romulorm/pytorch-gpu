@@ -1,6 +1,6 @@
 # Pytorch with Nvidia CUDA
 
-Initial project with Pytorch and Nvidia CUDA to start
+Initial project to start with Pytorch and Nvidia CUDA.
 
 ## 1. UV install
 Windows (Powershell):
