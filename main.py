@@ -20,7 +20,8 @@ def main():
         print("")
         print(x)
     else:
-        print("CUDA is not available. Check your drivers and toolkit.")
+        print("CUDA is not available. Check your Nvidia drivers.")
+        print("CUDA Toolkit is not necessary for this PyTorch implementation.")
 
 
 
