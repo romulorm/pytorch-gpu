@@ -40,7 +40,7 @@ source .venv/bin/activate
 uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
 ```
 
-## 5. Execute main to test
+## 6. Execute main to test
 ```shell
 python main.py
 ```
