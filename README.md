@@ -9,7 +9,7 @@ git clone https://github.com/romulorm/pytorch-gpu
 ### Open folder project in VSCode
 
 ## 2. UV install
-### Open terminal in VSCode
+### Open terminal in VSCode and install UV
 Windows (Powershell):
 ```shell
 irm https://astral.sh/uv/install.ps1 | iex
