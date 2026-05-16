@@ -1,4 +1,4 @@
-# Pytorch with Nvidia CUDA
+# 🔥 Pytorch with Nvidia CUDA 🔥 
 
 Initial project to start with Pytorch and Nvidia CUDA.
 
@@ -35,16 +35,23 @@ Linux/Mac:
 source .venv/bin/activate
 ```
 
-## 5. Install packages
-⚠️ **Warning:** For old graphics cards before RTX 20XX series, like Quadro P4000 and GTX 10XX, you can replace **cu130** with **cu126** at the address below:
-
+## 5. Install Pytorch packages
+### For old graphics cards before RTX 20XX series, like Quadro P4000 and GTX 10XX:
+```shell
+uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+```
+ ## For newer Nvidia graphics cards since RTX 20XX series:
 ```shell
 uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
 ```
-
+## For AMD graphics cards :
+```shell
+uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.2
+```
+ 
 ## 6. Execute main to test
 ```shell
 python main.py
 ```
 
-### ⚠️ If output shows Tensor matrix and device=CUDA, it's ready! 🚀
+### If output shows Tensor matrix and device=CUDA, it's ready! 🚀
