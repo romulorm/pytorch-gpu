@@ -20,7 +20,7 @@ def main():
         print("")
         print(x)
     else:
-        print("CUDA is not available. Check your Nvidia drivers.")
+        print("CUDA is not available. Check your Nvidia drivers with nvidia-smi command.")
         print("CUDA Toolkit is not necessary for this PyTorch implementation.")
 
 

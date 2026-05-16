@@ -36,8 +36,10 @@ source .venv/bin/activate
 ```
 
 ## 5. Install packages
+⚠️ **Warning:** For old graphics cards before RTX 20XX series, like Quadro P4000 and GTX 10XX, you can replace **cu130** with **cu126** at the address below:
+
 ```shell
-uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
 ```
 
 ## 6. Execute main to test
