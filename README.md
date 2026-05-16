@@ -2,7 +2,14 @@
 
 Initial project to start with Pytorch and Nvidia CUDA.
 
-## 1. UV install
+## 1. Clone this repo
+```shell
+git clone https://github.com/romulorm/pytorch-gpu
+```
+### Open folder project in VSCode
+
+## 2. UV install
+### Open terminal in VSCode
 Windows (Powershell):
 ```shell
 irm https://astral.sh/uv/install.ps1 | iex
@@ -12,13 +19,10 @@ Linux/Mac:
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-## 2. Repository clone
-git clone https://github.com/romulorm/pytorch-gpu.git
-
-## 3. Syncronize project
+## 3. Create virtual environment
 ```shell
 cd pytorch-gpu
-uv sync
+uv venv .venv --python 3.13 --seed
 ```
 
 ## 4. Activate virtual environment
@@ -29,6 +33,11 @@ Windows:
 Linux/Mac:
 ```shell
 source .venv/bin/activate
+```
+
+## 5. Install packages
+```shell
+uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
 ```
 
 ## 5. Execute main to test
