@@ -1,6 +1,6 @@
-# 🔥 Pytorch with Nvidia CUDA 🔥 
+# 🔥 Pytorch-GPU project setup 🔥 
 
-Initial project to start with Pytorch and Nvidia CUDA.
+Initial project to start with Pytorch and GPU.
 
 ## 1. Clone this repo
 ```shell
