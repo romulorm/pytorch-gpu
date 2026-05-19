@@ -22,6 +22,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ## 3. Create virtual environment
 ```shell
 cd pytorch-gpu
+uv init .
 uv venv .venv --python 3.13 --seed
 ```
 
