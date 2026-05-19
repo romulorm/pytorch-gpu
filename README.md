@@ -35,8 +35,18 @@ Linux/Mac:
 ```shell
 source .venv/bin/activate
 ```
+## 5. Initializing the project with uv
+Two ways to work with uv:
+    - uv init: creates the pyproject.toml file and uv will be responsible for managing the libraries
+    - using pip: use the command uv pip install XXXX to install dependencies directly in the .venv folder (requires an active environment)
+We will use **uv** to manage this project.
 
-## 5. Install Pytorch packages
+Linux/Mac/Windows:
+```shell
+uv init
+```
+
+## 6. Install Pytorch packages
 ### For old graphics cards before RTX 20XX series, like Quadro P4000 and GTX 10XX:
 ```shell
 uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
@@ -48,6 +58,10 @@ uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.o
 ## For AMD graphics cards :
 ```shell
 uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.2
+```
+## For VGA compatibleA graphics cards and CPU :
+```shell
+uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
  
 ## 6. Execute main to test
