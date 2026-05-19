@@ -37,15 +37,16 @@ source .venv/bin/activate
 ```
 
 ## 5. Install Pytorch packages
+
 ### For old graphics cards before RTX 20XX series, like Quadro P4000 and GTX 10XX:
 ```shell
 uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
 ```
- ## For newer Nvidia graphics cards since RTX 20XX series:
+### For newer Nvidia graphics cards since RTX 20XX series:
 ```shell
 uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
 ```
-## For AMD graphics cards :
+### For AMD graphics cards :
 ```shell
 uv add numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.2
 ```
